@@ -1,0 +1,33 @@
+<script type="text/javascript">
+    RED.nodes.registerType('odoo-xmlrpc-config', {
+        category: 'config',
+        defaults: {
+            url: {value: "", required: true},
+            db: {value: "", required: true},
+            username: {value: "", required: true},
+            password: {value: "", required: true},
+        },
+        label: function () {
+            return this.url + " [" + this.db + "]";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="odoo-xmlrpc-config">
+    <div class="form-row">
+        <label for="node-config-input-url"><i class="fa fa-globe"></i> URL</label>
+        <input type="text" id="node-config-input-url">
+    </div>
+    <div class="form-row">
+        <label for="node-config-input-db"><i class="fa fa-user"></i> Database name</label>
+        <input type="text" id="node-config-input-db">
+    </div>
+    <div class="form-row">
+        <label for="node-config-input-username"><i class="fa fa-user"></i> Username</label>
+        <input type="text" id="node-config-input-username">
+    </div>
+    <div class="form-row">
+        <label for="node-config-input-password"><i class="fa fa-lock"></i> Password</label>
+        <input type="password" id="node-config-input-password">
+    </div>
+</script>

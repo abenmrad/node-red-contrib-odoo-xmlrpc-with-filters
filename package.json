@@ -1,0 +1,26 @@
+{
+    "name": "node-red-contrib-odoo-xmlrpc",
+    "version": "0.0.1",
+    "description": "Odoo XMLRPC API client nodes for Node Red",
+    "author": "Ross Golder <ross@golder.org>",
+    "dependencies": {
+      "odoo-xmlrpc": "git+https://github.com/rossigee/odoo-xmlrpc.git"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rossigee/node-red-contrib-odoo-xmlrpc.git"
+    },
+    "keywords": [
+        "odoo",
+        "node-red",
+        "xmlrpc"
+    ],
+    "node-red": {
+        "nodes": {
+            "odoo-xmlrpc-config": "odoo-xmlrpc-config.js",
+            "odoo-xmlrpc-read": "read-node.js",
+            "odoo-xmlrpc-search": "search-node.js",
+            "odoo-xmlrpc-unlink": "unlink-node.js"
+        }
+    }
+}
