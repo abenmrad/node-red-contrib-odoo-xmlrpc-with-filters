@@ -18,7 +18,7 @@ module.exports = function (RED) {
                 }
 
                 var inParams = [];
-                inParams.push([]);
+                inParams.push(msg.payload);
                 var params = [];
                 params.push(inParams);
                 //node.log('Creating object for model "' + config.model + '"...');
