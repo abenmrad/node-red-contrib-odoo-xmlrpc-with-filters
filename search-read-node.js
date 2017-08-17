@@ -22,7 +22,7 @@ module.exports = function (RED) {
                 var params = [];
                 params.push(inParams);
                 //node.log('Search-reading for model "' + config.model + '"...');
-                odoo_inst.execute_kw(config.model, 'search-read', params, function (err, value) {
+                odoo_inst.execute_kw(config.model, 'search_read', params, function (err, value) {
                     if (err) {
                         return handle_error(err, node);
                     }
