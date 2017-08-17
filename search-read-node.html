@@ -1,0 +1,41 @@
+<script type="text/javascript">
+    RED.nodes.registerType('odoo-xmlrpc-search-read', {
+        category: "odoo",
+        defaults: {
+            name: { value: "" },
+            host: { value: "", type: "odoo-xmlrpc-config" },
+            model: { value: "", required: true },
+            filter: { value: "", required: false },
+            offset: {value: 0, required: false },
+            limit: {value: 100, required: false }
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "white-globe.png",
+        color: "#a6bbcf",
+        label: function () {
+            return this.name || "odoo-xmlrpc-search-read"
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="odoo-xmlrpc-search-read">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+         <label for="node-input-host"><i class="icon-bookmark"></i> URL</label>
+         <input type="text" id="node-input-host">
+     </div>
+     <div class="form-row">
+         <label for="node-input-model"><i class="icon-"></i> Model</label>
+         <input type="text" id="node-input-model">
+     </div>
+</script>
+
+<script type="text/x-red" data-help-name="odoo-xmlrpc-search-read">
+    <p>Calls the 'search-read' method on Odoo using the given model.</p>
+    <p>Filters can be provided by passing them as an array in the 'filters' attribute on the incoming message.</p>
+    <p>Offset and limit can be controlled via the 'offset' and 'limit' message attributes respectively.</p>
+</script>
