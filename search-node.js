@@ -11,6 +11,7 @@ module.exports = function (RED) {
         var node = this;
 
         node.on('input', function (msg) {
+            node.status({});
             this.host.connect(function(err, odoo_inst) {
                 if (err) {
                     return handle_error(err, node);
