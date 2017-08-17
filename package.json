@@ -20,7 +20,7 @@
             "odoo-xmlrpc-config": "odoo-xmlrpc-config.js",
             "odoo-xmlrpc-read": "read-node.js",
             "odoo-xmlrpc-search": "search-node.js",
-            "odoo-xmlrpc-search-read": "search-node-read.js",
+            "odoo-xmlrpc-search-read": "search-read-node.js",
             "odoo-xmlrpc-create": "create-node.js",
             "odoo-xmlrpc-update": "update-node.js",
             "odoo-xmlrpc-unlink": "unlink-node.js"
