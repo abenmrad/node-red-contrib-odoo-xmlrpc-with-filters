@@ -1,6 +1,6 @@
 {
     "name": "node-red-contrib-odoo-xmlrpc",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Odoo XMLRPC API client nodes for Node Red",
     "author": "Ross Golder <ross@golder.org>",
     "dependencies": {
