@@ -11,8 +11,8 @@
         "url": "git+https://github.com/rossigee/node-red-contrib-odoo-xmlrpc.git"
     },
     "keywords": [
-        "odoo",
         "node-red",
+        "odoo",
         "xmlrpc"
     ],
     "node-red": {
