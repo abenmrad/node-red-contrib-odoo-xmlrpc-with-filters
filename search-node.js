@@ -17,8 +17,13 @@ module.exports = function (RED) {
                     return handle_error(err, node);
                 }
 
-                var inParams = [];
-                inParams.push([]);
+                var inParams;
+                if (msg.filters && (Array.isArray(msg.filters) && msg.filters.length > 0)){
+                  inParams = msg.filters;
+                } else {
+                  inParams = [];
+                  inParams.push([]);
+                }
                 var params = [];
                 params.push(inParams);
                 //node.log('Searching for model "' + config.model + '"...');
