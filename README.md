@@ -4,13 +4,16 @@ A set of nodes for making calls to the Odoo XML-RPC API.
 
 ## Installation
 
+From your terminal:
+
 ```bash
-$ npm install node-red-contrib-odoo-xmlrpc
+cd ~/.node-red
+npm install https://github.com/BatikhSouri/node-red-contrib-odoo-xmlrpc
 ```
 
 ## Usage
 
-Should be fairly self explanatory.
+Documentation of each node is found in the "Info" tab in the Node-RED Flow editor.
 
 See [Odoo Web Service API](http://www.odoo.com/documentation/10.0/api_integration.html) for more information.
 
