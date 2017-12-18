@@ -36,7 +36,7 @@ __What if a message "No git binary found in $PATH" appears?__
 
 Well, you'd need to [download and install git](https://git-scm.com/downloads). You might then need to close & re-open your terminal. 😕
 
-__What if I already installed the original node-red-contrib-odoo-xmlrpc module?__
+### What if I already installed the original node-red-contrib-odoo-xmlrpc module?
 
 1. Export your existing flows (just in case) and close the Node-RED server/application
 2. Delete the "node-red-contrib-odoo-xmlrpc" folder from ~/.node-red/node_modules/
