@@ -6,7 +6,7 @@ A set of nodes for making calls to the Odoo XML-RPC API.
 
 Assuming that you have [Node-RED](nodered.org) already installed.
 
-You can install this module directly from the palette of Node-RED
+You can install this module directly from the palette of Node-RED or using the [other official methods](https://nodered.org/docs/getting-started/adding-nodes), by searching for "node-red-contrib-odoo-xmlrpc-with-filters".
 
 ### macOS and Linux
 From your terminal:
@@ -38,10 +38,11 @@ Well, you'd need to [download and install git](https://git-scm.com/downloads). Y
 
 __What if I already installed the original node-red-contrib-odoo-xmlrpc module?__
 
-1. Export your existing flows (just in case)
-2. Uninstall the "node-red-contrib-odoo-xmlrpc" module from the palette
+1. Export your existing flows (just in case) and close the Node-RED server/application
+2. Delete the "node-red-contrib-odoo-xmlrpc" folder from ~/.node-red/node_modules/
 3. Install the "node-red-contrib-odoo-xmlrpc-with-filters" module from the palette
-4. Load/create your flows, if necessary
+4. Restart the Node-RED application
+5. Load/create your flows, if necessary
 
 That should be it.
 
