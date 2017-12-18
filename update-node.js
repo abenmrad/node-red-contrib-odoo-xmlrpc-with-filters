@@ -17,12 +17,21 @@ module.exports = function (RED) {
                     return handle_error(err, node);
                 }
 
-                var inParams = [];
-                inParams.push([]);
+                var inParams;
+                if (msg.payload){
+                  if (!Array.isArray(msg.payload)){
+                    return handle_error(new Error('when defined, msg.payload must be an array'), node);
+                  }
+                  inParams = msg.payload
+                } else {
+                  inParams = [];
+                  inParams.push([]);
+                }
+
                 var params = [];
                 params.push(inParams);
                 //node.log('Creating object for model "' + config.model + '"...');
-                odoo_inst.execute_kw(config.model, 'update', params, function (err, value) {
+                odoo_inst.execute_kw(config.model, 'write', params, function (err, value) {
                     if (err) {
                         return handle_error(err, node);
                     }
