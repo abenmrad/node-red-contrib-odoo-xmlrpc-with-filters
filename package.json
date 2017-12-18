@@ -9,7 +9,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/rossigee/node-red-contrib-odoo-xmlrpc.git"
+        "url": "git+https://github.com/BatikhSouri/node-red-contrib-odoo-xmlrpc-with-filters.git"
     },
     "keywords": [
         "node-red",
