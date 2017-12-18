@@ -6,17 +6,36 @@ A set of nodes for making calls to the Odoo XML-RPC API.
 
 Assuming that you have [Node-RED](nodered.org) already installed.
 
-From your terminal (On macOS or Linux):
+__NOTE:__
+As of now, you cannot install this module directly from the palette of Node-RED.
+
+## macOS and Linux
+From your terminal:
 
 ```bash
-# Go to the folder where your Node-RED plugins would be installed. The command below would be for macOS and Linux
+# Go to the folder where your Node-RED plugins would be installed.
 cd ~/.node-red
+
 # Install the plugin using the following command
 npm install https://github.com/BatikhSouri/node-red-contrib-odoo-xmlrpc
 ```
 
-__NOTE:__
-As of now, you cannot install this module directly from the palette of Node-RED.
+## Windows
+From cmd:
+
+```bash
+# Go to the folder where your Node-RED plugins would be installed. Create it if it doesn't exist
+cd %userprofile%
+mkdir .node-red
+cd .node-red
+
+# Install the plugin using the following command
+npm install https://github.com/BatikhSouri/node-red-contrib-odoo-xmlrpc
+```
+
+__What if a message "No git binary found in $PATH" appears?__
+
+Well, you'd need to [download and install git](https://git-scm.com/downloads). You might then need to close & re-open your terminal.
 
 __What if I already installed the original node-red-contrib-odoo-xmlrpc module?__
 
