@@ -6,7 +6,7 @@ module.exports = function (RED) {
     };
 
     function OdooXMLRPCUpdateNode(config) {
-        RED.nodes.updateNode(this, config);
+        RED.nodes.createNode(this, config);
         this.host = RED.nodes.getNode(config.host);
         var node = this;
 
