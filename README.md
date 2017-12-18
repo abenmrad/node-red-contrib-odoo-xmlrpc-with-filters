@@ -35,7 +35,7 @@ npm install https://github.com/BatikhSouri/node-red-contrib-odoo-xmlrpc
 
 __What if a message "No git binary found in $PATH" appears?__
 
-Well, you'd need to [download and install git](https://git-scm.com/downloads). You might then need to close & re-open your terminal.
+Well, you'd need to [download and install git](https://git-scm.com/downloads). You might then need to close & re-open your terminal. 😕
 
 __What if I already installed the original node-red-contrib-odoo-xmlrpc module?__
 
